@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-col-gap {
+    column-gap: 50px;
+}
+
+ul {
+   /* list-style-type: none; */
+   margin: 0;
+}
+
+.dark-background {
+    background-color: #000;
+    color: #fff;
+}
+
+/* DON'T REPEAT YOURSELF */
+
+nav ul li {
+    display: block;
+}
+
+header nav a {
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+#logo {
+    font-size: 3rem;
+}
+
+#hero {
+    background: url(../images/theater-image-background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.font-large {
+    font-size: 7rem;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.col {
+    width: 25%;
+    padding: 0 1%;
+}
+
+.container {
+    margin: 0 15%;
+}
+
+.footer-content {
+    font-size: 1.2rem;
+}
+
+.footer-content div {
+    padding: .3rem 0;
+}
+
+.footer-content i {
+    font-size: 1.7rem;
+    color: #ebb625;
+}
+
+.spacing-y {
+    padding: 4rem 0;
+}
+
+main section {
+    padding: 2rem 0 0 0;
+}
+
+section article {
+    padding-bottom: 2rem;
+}
+
+.articles-header {
+    font-size: 1.5rem;
+    background-color: #f7f7f7;
+    border: 1px solid black;
+    padding: 3px 2rem;
+}
+
+section article button {
+     background-color: #ebb625;
+     padding: 15px 30px;
+     font-size: 1.2rem;
+}
+
+/* .full-width {
+
+} */
+
+/* .navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation-links-container {
+    display: flex;
+    column-gap: 50px;
+} */

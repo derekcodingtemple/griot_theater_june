@@ -1,0 +1,71 @@
+#hero-image {
+    background: url(../images/theater-image-background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+/* #hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#hero-header {
+    font-size: 7rem;
+}
+
+/* less than desireable practice = !important */
+
+.bg-dark-override {
+    /* background-color: #000 !important; */
+    background-color: #000;
+}
+
+footer {
+    padding: 4rem 0;
+    /* padding: y x;
+    margin: y x;
+    border: y x; */
+}
+
+.content-container > div {
+    padding-bottom: 2rem;
+}
+
+.content-container i {
+    color: #a76d03;
+    font-size: 1.5rem;
+    padding-right: 10px;
+}
+
+.content {
+    padding: 5rem 0;
+}
+
+.calendar {
+    background-color: #f7f7f7;
+    border: 1px solid black;
+    padding: 0 5%;
+}
+
+#showtimes article {
+    padding: 2rem 0;
+}
+
+#showtimes article button {
+    background-color: #ebb625;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+nav.navbar .navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-brand {
+    font-size: 2.2rem;
+}
+
+.navbar-nav li {
+    font-size: 1.3rem;
+}
