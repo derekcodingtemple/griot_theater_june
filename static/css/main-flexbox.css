@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .flex {
@@ -27,8 +30,8 @@ body {
 }
 
 ul {
-   /* list-style-type: none; */
-   margin: 0;
+    /* list-style-type: none; */
+    margin: 0;
 }
 
 .dark-background {
@@ -44,7 +47,7 @@ nav ul li {
 
 header nav a {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -53,7 +56,7 @@ header nav a:hover {
 }
 
 #logo {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #hero {
@@ -70,6 +73,10 @@ header nav a:hover {
     color: #fff;
 }
 
+.text-dark {
+    color: #000;
+}
+
 .col {
     width: 25%;
     padding: 0 1%;
@@ -80,15 +87,29 @@ header nav a:hover {
 }
 
 .footer-content {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-.footer-content div {
+.flex-col {
+    flex-direction: column;
+}
+
+
+.footer-content a {
+    transition: 0.5s;
+    display: block;
     padding: .3rem 0;
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+}
+
+.footer-content a:hover {
+    color: #ccc;
 }
 
 .footer-content i {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: #ebb625;
 }
 
@@ -105,29 +126,154 @@ section article {
 }
 
 .articles-header {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     background-color: #f7f7f7;
     border: 1px solid black;
     padding: 3px 2rem;
 }
 
 section article button {
-     background-color: #ebb625;
-     padding: 15px 30px;
-     font-size: 1.2rem;
+    background-color: #ebb625;
+    color: #fff;
+    /* transition-duration: 0.5s; */
+    border: 2px solid #ebb625;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* .full-width {
-
-} */
-
-/* .navigation-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+section article button:hover {
+    color: #ebb625;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    /* border: 2px solid #ebb625; */
+    /* padding: 15px 30px; */
+    /* font-size: 1.2rem; */
+    /* cursor: pointer; */
 }
 
-.navigation-links-container {
+#menu, #mobile-menu {
+    padding: 1rem 0;
+}
+
+/* mobile menu */
+#mobile-menu {
+    cursor: pointer;
+}
+
+#mobile-menu-icon>div {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+.change #mobile-menu-icon>.top {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #mobile-menu-icon>.middle {
+    opacity: 0;
+}
+
+.change #mobile-menu-icon>.bottom {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+#mobile-menu-links {
     display: flex;
-    column-gap: 50px;
-} */
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.1rem;
+    display: none;
+    /* height: 0rem; */
+    /* transition: 0.5s max-height ease-in-out; */
+}
+
+#mobile-menu-links a {
+    background-color: #363636;
+    padding: 1rem 0;
+    /* border: 3px solid #ccc; */
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    transition: 0.5s;
+}
+
+#mobile-menu-links a:hover {
+    background-color: #ccc;
+    /* padding: 1rem 0; */
+    /* border: 3px solid #ccc; */
+    color: #000;
+    /* text-decoration: none; */
+    border: 1px solid #000;
+}
+
+.showtime-content {
+    font-size: 1.1rem;
+}
+
+/* mobile menu */
+
+/* small screens */
+@media (max-width: 991px) {
+    #menu {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: flex;
+    }
+
+    section>article>div>* {
+        width: 100%;
+        /* width: 24rem; */
+    }
+
+    section>article>div, footer>.container>div {
+        flex-direction: column;
+    }
+
+    footer>.container>div {
+        flex-direction: column-reverse;
+    }
+
+    footer>.container>div.flex>.col {
+        margin: 2rem auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .maps-image {
+        display: none;
+    }
+
+    #hero>.hero-header {
+        font-size: 3.5rem;
+        border: 4px solid #fff;
+        padding: 5px 20px;
+    }
+
+}
+
+/* regular screens */
+@media (min-width: 992px) {
+    #menu {
+        display: flex;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+
+    section>article>div>* {
+        padding: .5rem;
+    }
+
+    section>article>div {
+        flex-wrap: wrap;
+    }
+}

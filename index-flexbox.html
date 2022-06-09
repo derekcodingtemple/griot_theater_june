@@ -13,7 +13,7 @@
         <header class="dark-background">
 
             <!-- <div class="navigation-bar"> -->
-            <div class="flex align-items-center flex-space-around">
+            <div id="menu" class="flex align-items-center flex-space-around">
                 <div id="logo">Griot Theater</div>
                 <nav>
                     <!-- <ul class="navigation-links-container"> -->
@@ -27,12 +27,30 @@
                 </nav>
             </div>
 
+            <!-- mobile menu -->
+            <div onclick="handleMobileMenu()" id="mobile-menu" class="flex align-items-center flex-space-around">
+                <div id="logo">Griot Theater</div>
+                <div id="mobile-menu-icon">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+            <div id="mobile-menu-links">
+                <a href="index-flexbox.html">Home</a>
+                <a href="features-flexbox.html">Features</a>
+                <a href="actors-flexbox.html">Actors</a>
+                <a href="mission-flexbox.html">Mission</a>
+                <a href="contact-flexbox.html">Contact</a>
+            </div>
+            <!-- mobile menu -->
+
         </header>
 
         <main>
 
             <div id="hero" class="flex flex-justify-center align-items-center">
-                <div class="font-large text-white">Featured Shows</div>
+                <div class="font-large text-white hero-header">Featured Shows</div>
             </div>
 
             <div class="container spacing-y">
@@ -50,7 +68,7 @@
                                 <p>Griot Theater, 233 S State St, Chicago, IL</p>
                                 <p>$75</p>
                             </div>
-                            <button class="text-white">
+                            <button>
                                 Read More
                             </button>
                         </div>
@@ -69,7 +87,7 @@
                                 <p>Griot Theater, 233 S State St, Chicago, IL</p>
                                 <p>$75</p>
                             </div>
-                            <button class="text-white">
+                            <button>
                                 Read More
                             </button>
                         </div>
@@ -88,7 +106,7 @@
                                 <p>Griot Theater, 233 S State St, Chicago, IL</p>
                                 <p>$75</p>
                             </div>
-                            <button class="text-white">
+                            <button>
                                 Read More
                             </button>
                         </div>
@@ -103,29 +121,29 @@
         <footer class="dark-background">
             <div class="container spacing-y">
                 <div class="flex full-width">
-                    <div class="col">
+                    <div class="col maps-image">
                         <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-97.27088928222658%2C32.552601080106484%2C-96.36451721191406%2C33.08406270572402&amp;layer=mapnik" style="border: 1px solid black"></iframe>
                     </div>
                     <div class="col">
                         <h2>Info</h2>
-                        <div class="footer-content">
+                        <div class="footer-content  flex flex-col">
                             <div>
                                 <i class="fa fa-map-marker"></i>
-                                Chicago, IL 60625
+                                <a target="_blank" href="https://www.google.com/maps/@41.6222187,-87.5692032,14z">Chicago, IL 60625</a>
                             </div>
                             <div>
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                example@email.com
+                                <a target="_blank" href="mailto:example@email.com">example@email.com</a>
                             </div>
                             <div>
                                 <i class="fa fa-mobile" aria-hidden="true"></i>
-                                Call Us +1 (555) 555-5555
+                                Call Us <a target="_blank" href="tel:+1-555-555-5555">+1 (555) 555-5555</a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <h2>Shows</h2>
-                        <div class="footer-content">
+                        <div class="footer-content flex flex-col">
                             <div>The Piano Lesson</div>
                             <div>A Raisin in the Sun</div>
                             <div>FAME</div>
@@ -135,16 +153,18 @@
                     </div>
                     <div class="col">
                         <h2>Social</h2>
-                        <div class="footer-content">
-                            <div>Facebook</div>
-                            <div>Twitter</div>
-                            <div>YouTube</div>
-                            <div>Instagram</div>
+                        <div class="footer-content social  flex flex-col">
+                            <a target="_blank" href="https://facebook.com">Facebook</a>
+                            <a target="_blank" href="https://twitter.com">Twitter</a>
+                            <a target="_blank" href="https://youtube.com">YouTube</a>
+                            <a target="_blank" href="https://instagram.com">Instagram</a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+
+        <script src="./static/js/main.js"></script>
 
     </body>
 </html>
