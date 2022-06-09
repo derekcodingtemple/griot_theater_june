@@ -158,6 +158,11 @@ section article button:hover {
     padding: 1rem 0;
 }
 
+.hero-header {
+    border: 4px solid #fff;
+    padding: 5px 20px;
+}
+
 /* mobile menu */
 #mobile-menu {
     cursor: pointer;
@@ -253,8 +258,6 @@ section article button:hover {
 
     #hero>.hero-header {
         font-size: 3.5rem;
-        border: 4px solid #fff;
-        padding: 5px 20px;
     }
 
 }
@@ -270,7 +273,7 @@ section article button:hover {
     }
 
     section>article>div>* {
-        padding: .5rem;
+        padding: 1.5rem;
     }
 
     section>article>div {
