@@ -204,12 +204,12 @@ section article button:hover {
 }
 
 #mobile-menu-links a:hover {
-    background-color: #ccc;
+    background-color: #fff;
     /* padding: 1rem 0; */
     /* border: 3px solid #ccc; */
     color: #000;
     /* text-decoration: none; */
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .showtime-content {
